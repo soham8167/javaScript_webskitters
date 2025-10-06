@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Use the ternary operator to classify a student's grade based on their score.</h1>
+    <input type="text" id="score" placeholder="Enter score">
+    <button onclick=
+    "
+    let a = parseInt(document.getElementById('score').value)
+  let b= document.getElementById('result');
+  b.innerHTML=  a>90 ? 'A' : a>70 ? 'B' : a>50 ? 'C' : 'fail';
+    
+    "
+    
+    >Click here</button>
+    <p id="result"></p>
+</body>
+</html>

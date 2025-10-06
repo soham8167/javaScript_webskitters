@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Wrire a program that removes all duplicates elements from an array</h2>
+    <input id="num" placeholder="Enter elements">
+    <button onclick="removeDuplicates()">Click here</button>
+    <p id="result"></p>
+    
+    <script>
+
+      let  removeDuplicates = () => {
+        let input = document.getElementById('num').value;  
+if(input.trim()===''){
+    alert("Enter elements")
+}
+
+        let newarr = input.split(',').map(Number).sort();
+       // console.log(newarr);
+        
+        let ans = [];
+        for(let i=0;i<newarr.length;i++){
+            if(!ans.includes(newarr[i])){
+                ans.push(newarr[i])
+            }
+        }
+       let result = document.getElementById('result')
+       result.innerHTML =`The result is ${ans}`
+        
+
+      }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Write a program that calculates the sum of digits of a number using a loop (e.g., 123 — 1+2+3 = 6).</h2>
+
+    <input type="number" placeholder="enter a number" id="num" >
+
+    <button onclick="
+        let a = parseInt (document.getElementById('num').value);
+        let ans = 0;
+        while(a>0){
+            
+            let rem = a%10;
+            a=a/10;
+            ans=ans+rem;
+        }
+        
+       let b= document.getElementById('result');
+       b.innerHTML=ans;
+        
+    
+    "
+    >Click here</button>
+    <p id="result"></p>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>
+      Write a program to find the sum and average of all numbers in an array
+    </h2>
+    <input id="num" placeholder="Enter elements" />
+    <button onclick="handleSum()">Sum</button>
+    <button onclick="handleAverage()">Average</button>
+    <p id="result"></p>
+
+    <script>
+            let handleSum = () =>{
+                let input = document.getElementById('num').value;
+                if(input.trim()===''){
+                    alert("Enter elements")
+                }
+                let newarr = input.split(',').map(Number);
+
+                let sum = newarr.reduce((acc,cr)=>{
+                    return acc+cr;
+                })
+                   let result = document.getElementById('result');
+                   result.innerHTML = `Sum is ${sum}`
+                    
+            }
+
+            let handleAverage = () => {
+
+                let input = document.getElementById('num').value;
+                if(input.trim()===''){
+                    alert("Enter elements")
+                }
+                let newarr = input.split(',').map(Number);
+
+                let sum = newarr.reduce((acc,cr)=>{
+                    return acc+cr;
+                   
+                })
+                let avg = sum/newarr.length
+                   let result = document.getElementById('result');
+                   result.innerHTML = `Average is ${avg}`
+            }
+
+    </script>
+  </body>
+</html>

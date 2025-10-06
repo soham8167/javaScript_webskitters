@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Create an arrow function that returns the factorial of a given number.</h2>
+
+        
+ <input placeholder="Enter a number" id="num">
+    <button onclick = "fact()" >Click here</button>
+    <p id="result"></p>
+    
+
+<script>
+
+        let fact =()=>{
+    let a= parseInt(document.getElementById('num').value);
+    let ans =1;
+    for(let i=1;i<=a;i++){
+        ans = ans * i;
+    }
+     let b = document.getElementById('result');
+     b.innerHTML = `Factorial is ${ans}`;
+            
+        
+        }
+        
+</script>
+
+</body>
+</html>

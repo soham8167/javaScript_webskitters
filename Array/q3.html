@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Create a program to reverse  an array without using reverse() method</h2>
+    <input id="num" placeholder="Enter elements">
+    <button onclick="reverseArray()">Click here</button>
+    <p id="result"></p>
+
+    <script>
+        let reverseArray = () =>{
+            let input = document.getElementById('num').value;
+            if(input.trim()===""){
+                alert("Enter elements")
+            }
+            let newarr = input.split(',').map(Number);
+            let ans =[];
+            for(let i=(newarr.length)-1;i>=0;i--){
+                     ans.push(newarr[i])
+            }
+            let result = document.getElementById('result');
+            result.innerHTML = `The result is ${ans}`
+            
+            
+        }
+    </script>
+    
+</body>
+</html>

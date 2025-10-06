@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2> Write a program where you use a default parameter to calculate compound interest (default interest rate if not provided).</h2>
+        <input id="initial-money" placeholder="Enter initial money">
+        <input id="interest-rate" placeholder="Enter Annual interest rate">
+        <input id="number" placeholder="Enter number of times">
+        <input id="time" placeholder="Enter time in years">
+    <br/>
+    <br/>
+        <button onclick="compoundInterest() ">Click here</button>
+        <p id="result"></p>
+
+
+
+
+<script>
+
+
+    function compoundInterest(){
+        
+
+    let p = parseInt(document.getElementById('initial-money').value);
+    let r = parseFloat(document.getElementById('interest-rate').value);
+    let n = parseInt(document.getElementById('number').value);
+    let t = parseInt(document.getElementById('time').value);
+    let ans= document.getElementById('result');    
+ 
+         let A = p*(1 +( r/100)/n)**(n*t);
+        ans.innerHTML=`The result is ${A}`;
+
+    }
+
+</script>
+
+</body>
+</html>

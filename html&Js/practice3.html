@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Use logical operators to check if a year is a leap year or not.</h2>
+    <input type="number" placeholder="Enter a year" id="num">
+
+    <button onclick="
+    let a = parseInt(document.getElementById('num').value);
+    if(a%100!==0){
+        if(a%4===0){
+            let b= document.getElementById('result');
+            b.innerHTML='leap year';
+        }else{
+            let b= document.getElementById('result');
+            b.innerHTML='Not leap year';
+        }
+    }else if(a%100===0 && a%400===0){
+        let c= document.getElementById('result');
+            c.innerHTML='leap year';
+    }else{
+        let d= document.getElementById('result');
+            d.innerHTML='Not leap year';
+    }
+    
+    "
+    >Click here</button>
+    <p id="result"></p>
+</body>
+</html>

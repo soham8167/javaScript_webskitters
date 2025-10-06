@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Do While Example</title>
+</head>
+<body>
+    <h2>Use a do-while loop to repeatedly ask the user for input until they type "exit".</h2>
+    <button onclick="handleClick()">Click here</button>
+
+    <script>
+        const handleClick = () => {
+            let input;
+            do {
+                input = prompt("Enter something (type 'exit' to stop):");
+            } while (input !== "exit");
+
+            alert("You exited the loop!");
+        }
+    </script>
+</body>
+</html>

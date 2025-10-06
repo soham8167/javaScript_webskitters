@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>problem 1</h2>
+    <input type="text" placeholder="Enter string" id="name">
+
+    <button onclick="handleClick()">click here</button>
+    <p id="result"></p>
+
+    <script>
+
+           
+            
+
+
+        let handleClick = () => {
+            let input = document.getElementById('name').value;
+            let convertarray = input.split(' ')
+           // console.log(convertarray);
+           let newArray = convertarray.map((value)=> (value[0].toUpperCase()+ value.slice(1))
+
+           )
+
+           
+            //console.log(newArray);
+            let newString = newArray.join(' ')
+                // console.log(newString);
+                
+            let ans = document.getElementById('result');
+             //ans.innerHTML =`Result is ${newString}`
+           
+            
+        }
+
+
+    </script>
+</body>
+</html>

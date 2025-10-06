@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Use switch to build a simple calculator that can perform addition, subtraction, multiplication, and division.</h2>
+
+        <label>Enter first number : 
+            <input type="number" id="first" >
+        </label>
+        <br/>
+        <br/>
+        <label>Enter second number : 
+            <input type="number" id="second" >
+        </label>
+        <br/>
+        <br/>
+
+
+            <button onclick=
+            
+            "
+            let no1 = parseInt(document.getElementById('first').value)
+            let no2 = parseInt(document.getElementById('second').value)
+            
+            let ans = document.getElementById('result')
+            ans.innerHTML=`Addtion is ${no1+no2}`;
+            "
+            
+            >+</button>
+            <button onclick=
+            "
+            let n1 = parseInt(document.getElementById('first').value)
+            let n2 = parseInt(document.getElementById('second').value)
+           
+            let ans = document.getElementById('result')
+            ans.innerHTML=`Subtraction is ${n1-n2}`;
+            "
+            >-</button>
+            <button onclick=
+            "
+            let n11 = parseInt(document.getElementById('first').value)
+            let n22 = parseInt(document.getElementById('second').value)
+            
+            let ans = document.getElementById('result')
+            ans.innerHTML=`Multiplication is ${n11*n22}`;
+            ">*</button>
+            <button onclick=
+            "
+            let d1 = parseInt(document.getElementById('first').value)
+            let d2 = parseInt(document.getElementById('second').value)
+            let ans = document.getElementById('result')
+            ans.innerHTML=`Division is ${d1/d2}`;
+            ">/</button>
+        
+        <p id="result"></p>
+</body>
+</html>

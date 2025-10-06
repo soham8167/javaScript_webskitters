@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Write a program to check whether a given string is a palindrome using built-in string methods.</h2>
+
+    <form onsubmit="handleSubmit(event)">
+        <input type="text" id="s" placeholder="Enter a word">
+        <button type="submit"> Click here</button>
+        <p id="result"></p>
+
+    </form>
+
+
+<script>
+    const handleSubmit = (event) => {
+        event.preventDefault();
+        let input = document.getElementById('s').value;
+        let size = input.length;
+        let reverse='';
+        for(let i = size-1; i>=0; i--){
+            reverse= reverse + input[i];
+        }
+        console.log(reverse);
+        
+                let ans = document.getElementById('result')
+
+            if(reverse===input){
+                ans.innerHTML = "The given string is palindrome";
+            }else{
+                ans.innerHTML = "The given string is not palindrome";
+            }
+        
+    }
+
+
+
+</script>
+
+</body>
+</html>

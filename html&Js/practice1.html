@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>hello</h2>
+    <input type="number" placeholder="enter first no" id="w">
+<input type="number" placeholder="enter second no" id="x">
+<input type="number" placeholder="enter third no" id="y">
+
+<button id="bb" onclick="
+let a = parseInt (document.getElementById('w').value);
+     let b = parseInt (document.getElementById('x').value);
+     let c = parseInt (document.getElementById('y').value);
+   
+
+if(a>=b && a>=c){
+document.getElementById('result').innerHTML=a;
+}else if(b>=a && b>=c){
+    document.getElementById('result').innerHTML=b;
+}else {
+    document.getElementById('result').innerHTML=c;
+}
+     
+"
+>largest</button>
+<p id="result"></p>
+    
+</body>
+</html>

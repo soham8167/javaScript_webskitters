@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Write a program that find the largest and smallest element in an array</h2>
+    <input id="n" placeholder="Enter elements">
+    <button onclick="handleLargest()">Check Largest</button>
+    <button onclick="handleSmallest()">Check Smallest</button>
+    <p id="result"></p>
+
+    <script>
+
+        
+
+        let handleLargest = () => {
+            let input = document.getElementById('n').value;
+            if(input.trim() === ""){
+                alert("Enter elements")
+            }
+            let newarr = input.split(',').map(Number)
+           
+            
+           
+           let l =newarr[0];
+           for(let i=1;i<newarr.length;i++){
+            
+            if(newarr[i]>l){
+                l=newarr[i]
+            }
+           }
+           let ans = document.getElementById('result')
+           ans.innerHTML = `The largest elements is ${l}`
+            
+            
+            
+              }
+        let handleSmallest = () => {
+            let input = document.getElementById('n').value;
+            if(input.trim()===''){
+                alert("Enter elements")
+            }
+
+            let newarr = input.split(',').map(Number)
+            let s = newarr[0];
+            for(let i=1; i<newarr.length; i++){
+                if(newarr[i]<s){
+                    s=newarr[i]
+                }
+
+            }
+            let ans = document.getElementById('result')
+            ans.innerHTML = `The smallest element is ${s}`;
+            
+            
+       
+        }
+
+        
+
+    </script>
+</body>
+</html>

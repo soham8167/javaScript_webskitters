@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Create a higher-order function that takes another function as input and executes it 3 times.</h2>
+
+    <button onclick="handleClick()" id="bb">Click here</button>
+    <p id="result"></p>
+
+    <script>
+        let ans = document.getElementById('result');
+        function handleClick(){
+            // ans='';
+            ans.innerHTML = "Welcome"
+            function c1(){
+               ans.innerHTML = "Hello"
+                
+                function c2(){
+                    ans.innerHTML = "Bye"
+                    
+                    
+                }
+                return c2;
+                
+            }
+            
+            return c1;
+
+        }
+        
+        
+    </script>
+</body>
+</html>

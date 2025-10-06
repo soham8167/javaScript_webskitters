@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Use slice()  to extract the middle 3 characters of a given string.</h2>
+    <form onsubmit="handlesubmit(event)">
+        <input type="text" id="s" placeholder="Enter a string">
+        <button type="submit">Click here</button>
+        <p id="result"></p>
+
+    </form>
+
+    <script>
+
+        //  const handleChange=(event)=>{
+        //         console.log(event.target.value);
+                
+        //     }
+
+        // javascript
+
+        const handlesubmit =(event)=>{
+            event.preventDefault()
+            //console.log(event);
+
+            let input = document.getElementById('s').value;
+            let n = (input.length)/2;
+            
+            let ans = document.getElementById('result')
+            ans.innerHTML=  `The result is ${input.slice(n-1, n+2)  }`        
+            
+           
+        }
+
+
+    </script>
+</body>
+</html>

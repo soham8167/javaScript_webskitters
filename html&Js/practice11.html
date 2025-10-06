@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2> Write a named function that checks whether a number is a palindrome or not</h2>
+    <input id="num" placeholder="Enter a number">
+    <button onclick="checkPalindrome()"> Click Here</button>
+
+
+    <p id="result"></p>
+
+
+
+    <script>
+
+        let checkPalindrome = () => {
+                let n = parseInt(document.getElementById('num').value);
+                let temp = Math.abs(n);
+                let rev = 0;
+                while(temp>0){
+                    rev = (rev*10) + (Math.floor(temp%10));
+                    temp = Math.floor(temp/10);
+                }
+                if(rev===n){
+                    let ans = document.getElementById('result');
+                    ans.innerHTML = "Number is Palindrome";
+                    
+                }else{
+                    let ans = document.getElementById('result');
+                    ans.innerHTML = "Number is not Palindrome";
+                }
+        }
+
+
+    </script>
+
+</body>
+</html>

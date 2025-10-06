@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Array</h2>
+    <input id="n", placeholder="Enter value using comma">
+    <button onclick="handleInput()">click here</button>
+    <p id="result"></p>
+
+    <script>
+ 
+const handleInput = () => {
+    
+
+    let input =  Array(document.getElementById('n').value);
+    if(input==''){
+        alert("Enter elements");
+        
+    }
+  let newarr=[];
+    for(let i=0;i<input.length; i++){
+        newarr.push(input[i])
+    }
+    
+    
+    
+    let ans = document.getElementById("result");
+    ans.innerHTML= `The result is ${newarr}`
+    
+}
+
+    </script>
+</body>
+</html>
