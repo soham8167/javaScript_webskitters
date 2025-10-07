@@ -143,3 +143,58 @@
 
 // }
 // uni([3,2,6,2,4,5,3])
+
+
+
+
+
+// let a =[2,5,4]
+// let a1 =[6,7,5]
+// console.log([...a,...a1]);
+
+// let a= [2,3,4,5,1,2,3,9]
+// let ans = [...new Set(a)]
+
+// console.log(ans);
+
+
+
+
+
+// let random = (max,min)=>{
+//     let a =Math.random()*(max-min)+min;
+//     return a
+
+// }
+// console.log(random(30,20));
+
+
+
+// let randomgenerate = (min,max,range)=>{
+// let arr=[];
+    
+//    for(let i = 0 ; i<range;i++){
+//     let a = Math.round(Math.random()*(max-min)+min);
+//     arr.push(a);
+//    }
+//    return arr
+// }
+// console.log(randomgenerate(10,50,3));
+
+
+
+//rest parameter & spread operator
+
+
+
+// home Work
+
+// const uniqueId = (userName, dept)=>{
+//     const randomNum = Math.round (10+ Math.random()*100)
+//     const id = userName+` ${randomNum}`
+//     console.log(id);
+    
+
+// }
+
+// uniqueId("Rahl", "ECE")
