@@ -185,6 +185,25 @@
 
 //rest parameter & spread operator
 
+// spread operator
+//  const arr1 = [1,3,2,5,4,];
+//  const arr2 = [...arr1,3,8,7,9,0]
+//  console.log(arr2);
+ 
+// rest parameter
+
+// let userInput = (...num) => {
+    
+// let a = [...new Set(num)]
+// console.log(a);
+
+// }
+ 
+//  console.log(userInput(2,3,1,5,4,7,6,3,6));
+ 
+
+
+
 
 
 // home Work
