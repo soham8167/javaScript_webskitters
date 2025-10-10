@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>write a program to display the current date in dd-mm-yyyy format</h2>
+    <button onclick="handelClick()">Click  here</button>
+    <p id="result"></p>
+
+    
+ <script>
+    const handelClick = () => {
+        let date = new Date()
+        
+        
+        let day = date.getDate();
+        //console.log(day);
+        
+        let month = date.getMonth()
+        let year = date.getFullYear()
+        
+
+        let print = document.getElementById('result')
+        print.innerHTML = `The current date is ${day} - ${month+1} - ${year}`
+    }
+        
+    </script>
+</body>
+</html>

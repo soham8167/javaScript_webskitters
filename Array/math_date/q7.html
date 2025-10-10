@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>write a program  print the current time with am/pm</h2>
+
+    <button onclick="handelClick()">Click here</button>
+    <p id="result"></p>
+
+
+    <script>
+        const handelClick = () => {
+            let today = new Date();
+            let hours = today.getHours();
+            let minitues = today.getMinutes();
+            let second = today.getSeconds()
+            let period = hours>=12 ? "PM" : "AM";
+            
+            let answer = document.getElementById('result');
+            answer.innerHTML = `Current time is ${hours}:${minitues}:${second} ${period} `
+            
+            
+           
+        }
+        
+    </script>
+</body>
+</html>

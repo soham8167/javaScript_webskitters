@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>write a program to convert a string "123.45" into a number and round it down using Math.floor()</h2>
+    <input id="digit" placeholder="Enter digit">
+    <button onclick="handleClick()">Click here</button>
+    <p id="result"></p>
+
+
+    <script>
+        const handleClick = () => {
+            let ip = Number(document.getElementById('digit').value);
+            let ans = Math.floor(parseFloat(ip))
+            //console.log(typeof(ans));
+            
+            let print = document.getElementById('result')
+            print.innerHTML = `The result is ${ans}`
+
+        }
+        
+    </script>
+</body>
+</html>

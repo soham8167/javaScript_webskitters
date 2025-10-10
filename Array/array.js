@@ -206,14 +206,214 @@
 
 
 
-// home Work
+
 
 // const uniqueId = (userName, dept)=>{
 //     const randomNum = Math.round (10+ Math.random()*100)
-//     const id = userName+` ${randomNum}`
+//     const id = userName+`${randomNum}`
 //     console.log(id);
     
 
 // }
 
 // uniqueId("Rahul", "ECE")
+
+
+
+
+// let checkInteger = (num)=>{
+//     if(Number.isInteger(num)){
+//         console.log("integer");
+        
+//     }else{
+//         console.log("not integer");
+        
+//     }
+
+// }
+// checkInteger(10.1)
+
+
+
+
+// let convertNumber= (num)=>{
+//     let ans = parseFloat(num)
+
+//     return ans
+// }
+// console.log(convertNumber("123.45"));
+
+
+
+
+
+
+
+
+// let num =(n)=>{
+    
+//     let ans = Math.round(n*100)/100
+// console.log(ans);
+
+// }
+// num(3.4567);
+
+
+
+
+
+// let num =(n)=>{
+    
+//     let ans = Number(n.toFixed(2))
+// console.log(ans);
+
+// }
+// num(3.4567);
+
+
+
+
+// function getDayName(date){
+// let days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]
+//     let newdate = new Date(date)
+//     return days[newdate.getDay()]
+    
+// }
+
+// console.log(getDayName("10/08/2025"));
+
+
+
+// let date = new Date();
+// console.log(date);
+
+
+
+
+
+// function getDayaleft(){
+//     let today = new Date();
+//     let yearleft = today.getFullYear() +1;
+//     let newYear = new Date(`01/01/${yearleft}`)
+//     let diff = newYear-today;
+//     console.log(diff);
+//     let convertDay = diff/(1000*60*60*24)
+//     let accDate = Math.ceil(convertDay)
+//     console.log(accDate);
+    
+    
+// }
+// getDayaleft()
+
+
+
+
+
+// function dayDiff(d1,d2){
+//     const date1 = new Date(d1)
+//     console.log(date1.toLocaleString());
+    
+//     const date2 = new Date(d2)
+//      console.log(date2.toLocaleString());
+//     const diff = date2-date1
+//     console.log(diff);
+    
+//     let convertDay = diff/(1000*60*60*24)
+    
+// console.log(convertDay);
+
+// }
+// dayDiff("10/05/2025", "10/15/2025")
+
+
+
+
+// let today = new Date()
+// let hour = today.getHours()
+// let minitue = today.getMinutes()
+// let time = hour>=12 ? "PM" : "AM";
+// let ans = `${hour}-${minitue}-${time}`
+
+// console.log(ans);
+
+
+
+
+
+
+
+
+
+
+
+// let today = new Date();
+// let time = today.toLocaleString();
+// console.log(time);
+
+// let today1 = new Date();
+// let time1 = today1.toISOString();
+// console.log(time1);
+
+
+
+// let date = new Date()
+// let day = date.getDay()
+// console.log(day);
+
+
+
+// let myDetails = {
+//     n: "soham",
+//     dept: "ece",
+//     id: 10,
+//     showDetails: function (){
+//         console.log(`Details ${this.n} ${this.dept} ${this.id}`);
+        
+//     }
+// }
+
+
+// myDetails.age=24;
+// console.log(myDetails);
+
+// let size = Object.keys(myDetails).length
+// console.log(size);
+// myDetails.showDetails();
+
+
+
+
+
+// let personalDetails = {
+//     nam: "soham",
+//     roll: 10,
+//     sec: 'A',
+//     address:{
+//         state: "west bengal",
+//         country: "India"
+//     },
+//     personalDetails: function (){
+//         console.log(`personal details is ${this.nam} ${this.roll} ${this.sec}`);
+        
+//     },
+//     AddressDetails: function (){
+//         console.log(`Address is ${this.address.state} ${this.address.country}`);
+        
+//     },
+//     wholeDetails: function (){
+//         console.log(`full details is ${this.nam} ${this.address.state}`);
+        
+        
+//     }
+// }
+
+
+// console.log('details',personalDetails.wholeDetails());
+
+
+
+
+
+// let arr = [1,6,3,4,9,2,4]
+// let ans = Math.max.apply(null,arr)
+// console.log(ans);

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Write a program to check if a given number is an integer using build-in method</h2>
+    
+    <input id="num" placeholder="Enter a number">
+    <button onclick="handelClick()">Click here</button>
+    <p id="result"></p>
+
+
+    <script>
+        const handelClick = () => {
+            let input = Number(document.getElementById('num').value);
+            let ans = document.getElementById('result')
+            if(Number.isInteger(input)){
+                ans.innerHTML = "Given number is integer";
+                
+            }   else{
+                ans.innerHTML = "Not integer";
+                
+            }         
+        }
+
+    </script>
+</body>
+</html>

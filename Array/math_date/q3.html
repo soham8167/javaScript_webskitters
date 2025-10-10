@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>write a program that rounds a decimal number to 2 places.  // 3.4567 - 3.46</h2>
+    <input id="num" placeholder="Enter number">
+    <button onclick="handelClick()">Click here</button>
+    <p id="result"></p>
+
+
+    <script>
+        const handelClick = () => {
+            let ip = Number(document.getElementById('num').value);
+                let print = document.getElementById('result');
+                let ans = ip.toFixed(2)
+                print.innerHTML = `The result is ${ans}`;
+                
+        }
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>write a program that calculate the number of days left until new year</h2>
+
+    <button onclick="handelClick()">Click here</button>
+    <p id="result"></p>
+
+
+    <script>
+        const handelClick = () => {
+            let today = new Date();
+            let nextYear = today.getFullYear() + 1;
+            let newYear = new Date(`01/01/${nextYear}`)
+            let diff = newYear-today
+           // console.log(diff);
+            let convertDay = Math.ceil(diff/(1000*60*60*24))
+            
+            let answer = document.getElementById('result');
+            answer.innerHTML = `Days left in this year is ${convertDay}`
+            
+            
+           
+        }
+        
+    </script>
+</body>
+</html>
