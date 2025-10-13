@@ -414,6 +414,127 @@
 
 
 
+
 // let arr = [1,6,3,4,9,2,4]
 // let ans = Math.max.apply(null,arr)
 // console.log(ans);
+
+
+
+
+
+
+// let arrobj = (userList, id, updateName) => {
+
+//   const update =  userList.map((user)=>{
+//     return user.id === id ? {...user, name: updateName} : user
+         
+//     })
+//     return update
+
+// }
+
+// const students = [ 
+//       { id: 1, name: 'Alice', age: 20 },   
+//        { id: 2, name: 'Bob', age: 22 },      
+//        { id: 3, name: 'Charlie', age: 21 }    
+//     ];
+
+//     console.log(arrobj(students, 3 , "soham"));
+    
+
+
+
+
+
+    // const deletUser = (userList,id)=>{
+    //     const update = userList.filter((user)=>{
+    //         return user.id!==id 
+    //     })
+    //     return update
+
+    // }
+    // const students = [ 
+    //   { id: 1, name: 'Alice', age: 20 },   
+    //    { id: 2, name: 'Bob', age: 22 },      
+    //    { id: 3, name: 'Charlie', age: 21 }    
+    // ];
+
+    // console.log(deletUser(students, 1));
+    
+
+
+
+
+
+// const obj1 = {
+//     name: "soham",
+//     id: 1,
+//     greet: function(){
+//         console.log(`Hello i am ${this.name}`);
+        
+//     }
+// }
+// const obj2 = {
+    
+//     name: "soha",
+//     id: 2
+    
+
+
+// }
+// console.log(obj1.greet());
+
+// console.log(obj1.greet.call(obj2));
+
+
+
+
+
+
+// let obj1 = {
+//     name: "soham",
+//     id: 1,
+//     introduction: function(state,country){
+//         console.log(`${this.id}- My name: ${this.name} state is ${state} and country is ${country}`);
+        
+
+//     }
+// }
+
+// let obj2 = {
+//     name: "Rohan",
+//     id: 2
+// }
+
+// obj1.introduction.apply(obj2,["West", "India"])
+
+
+
+
+
+// let obj1 = {
+//     name: "soham",
+//     id: 1,
+//     introduction: function(){
+//         console.log(`Hello`);
+        
+//     }
+// }
+// let obj2 = {
+//     name: "Ram",
+//     age: 30
+// }
+// obj1.introduction.bind(obj2)
+
+
+
+
+
+
+// let sum = (...arr) => {
+//    return arr.reduce((acc,value)=>{
+//     return acc+value
+//    })
+// }
+// console.log(sum(1,2,3,4,5,6));
