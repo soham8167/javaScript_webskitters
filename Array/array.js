@@ -465,7 +465,7 @@
 
 
 
-
+// Create an object person with a method greet(), then borrow that method into another object using call().
 
 // const obj1 = {
 //     name: "soham",
@@ -492,6 +492,9 @@
 
 
 
+// Write a program where you pass multiple arguments to a method using apply()
+
+
 // let obj1 = {
 //     name: "soham",
 //     id: 1,
@@ -507,17 +510,18 @@
 //     id: 2
 // }
 
+
 // obj1.introduction.apply(obj2,["West", "India"])
 
 
 
-
+// create a function that uses bind () to permanently bind this to a specific object.
 
 // let obj1 = {
 //     name: "soham",
 //     id: 1,
 //     introduction: function(){
-//         console.log(`Hello`);
+//         console.log(`Hello ${this.name}`);
         
 //     }
 // }
@@ -525,12 +529,15 @@
 //     name: "Ram",
 //     age: 30
 // }
-// obj1.introduction.bind(obj2)
+
+
+// let bb = (obj1.introduction.bind(obj2));
+
+// bb()
 
 
 
-
-
+// sum of the numbers
 
 // let sum = (...arr) => {
 //    return arr.reduce((acc,value)=>{
@@ -538,3 +545,8 @@
 //    })
 // }
 // console.log(sum(1,2,3,4,5,6));
+
+
+
+
+
