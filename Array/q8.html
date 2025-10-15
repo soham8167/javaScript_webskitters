@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>average any number</h2>
+
+    <input id="num" placeholder="enter number">
+    <button onclick="handleClick()">Click here</button>
+    <p id="result"></p>
+
+<script>
+let handleClick = () => {
+    let ip = (document.getElementById('num').value);
+    ipArray = ip.split(',')
+    console.log(ipArray);
+    
+    let aa = ipArray.reduce((acc, val)=> {
+        return acc + Number(val )/ipArray.length
+    },0)
+    console.log(aa);
+    
+    let ans = document.getElementById('result');
+
+}
+</script>
+</body>
+</html>

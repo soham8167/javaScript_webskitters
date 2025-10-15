@@ -550,3 +550,97 @@
 
 
 
+
+//Write a program where a function defined outside an object is borrowed by multiple objects using call().
+
+
+
+
+// Write a function that finds the maximum number from an array using the spread operator.
+
+// let maxEle = (value) => {
+//     let ans = Math.max(...value)
+//     return ans;
+// }
+
+// console.log(maxEle([2,4,3,9,4,1]));
+
+
+
+// Write a program that copies an object using the spread operator (deep vs shallow copy case).
+
+
+// let student1 = {
+//     id: 1,
+//     name: "Ram",
+
+// }
+// let copys = {...student1};
+// copys = "abc";
+// console.log(student1);
+// console.log(copys);
+
+
+
+
+// write a program that combines multiple object into one using the spread operator
+
+// let p1 = {id: 1, name: "Ram", sec: 'A'}
+// let p2 = {place: "kolkata", name: "am", sec: 'B'}
+// let p3 = {state: "west bengal", name: "jam", sec: 'C'}
+ 
+// let ans = {...p1,...p2,...p3}
+// console.log(ans);
+
+
+
+
+
+// let removeDuplicates = (arr) => {
+//     const ans = [...new Set(arr)]
+// console.log(ans);
+
+// }
+// removeDuplicates([2,2,3,5,5,6,1,8,1])
+
+
+
+
+// let fff = (nam, id, ...add) => {
+//     console.log(add);
+    
+//     if(add.length>0){
+//         console.log(`${nam} and  i am from ${add[0].state}`);
+//     }else{
+//         console.log(`${nam}`);
+        
+//     }
+    
+    
+// }
+
+// let address = {
+//     state: "west bengal",
+//     city: "kolkata"
+// }
+// fff("soham", 1, address)
+
+
+
+
+
+// let a = 5;
+// let b = 7;
+// [a,b]=[b,a]
+// console.log(a,b);
+
+
+
+// let fff = ([n1,n2,...other]) => {
+//     console.log(n1,n2);
+//     let a2 = other
+//     console.log(a2);
+    
+    
+// }
+// console.log(fff([1,2,4,"jdhcj"]));
