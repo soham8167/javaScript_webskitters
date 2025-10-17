@@ -590,6 +590,8 @@
 // let p3 = {state: "west bengal", name: "jam", sec: 'C'}
  
 // let ans = {...p1,...p2,...p3}
+
+
 // console.log(ans);
 
 
@@ -619,6 +621,7 @@
     
 // }
 
+
 // let address = {
 //     state: "west bengal",
 //     city: "kolkata"
@@ -644,3 +647,53 @@
     
 // }
 // console.log(fff([1,2,4,"jdhcj"]));
+
+
+
+
+
+// let arr = [1,[2,3],[4,[5,6]]];
+// [arr,[b,c],[d,[e ,f]]]
+// console.log(e);
+
+
+
+
+
+
+// const person = {
+//     name: "sss",
+//     age: 24,
+//     sec: 'A',
+//     city: "Kolkata"
+// }
+// let {name,age} = person;
+// console.log(name,age);
+
+
+
+// const person = {
+//     name: "sss",
+//     age: 24,
+    
+// }
+// // person.city="kolkata"
+// let {name,age,city="kol"} = person;
+// console.log(city );
+
+
+
+
+
+const employee = 
+{   name: "John Doe",   age: 28, 
+      address: 
+    {     street: "123 Main St", 
+            city: "Los Angeles",   
+              country: "USA" 
+              }, 
+      profession: "Engineer"
+     };
+
+let {name,age,address:{street,city,country},profession } = employee
+console.log(city);

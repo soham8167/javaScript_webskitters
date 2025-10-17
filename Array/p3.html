@@ -14,31 +14,17 @@
 
     <script>
 
-           
-            
-
-
         let handleClick = () => {
             let input = document.getElementById('name').value;
             
 
            let reverseString = input.split('').reverse().join('')
             let newString = reverseString.split(' ').map((value)=> (value[0].toUpperCase()+ value.slice(1))).join(' ')
-            
-
-
-           
-
-            
-            
                 
               let ans = document.getElementById('result');
              ans.innerHTML =`Result is ${newString}`
            
-            
         }
-
-
     </script>
 </body>
 </html>

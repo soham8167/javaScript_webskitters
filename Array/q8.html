@@ -6,9 +6,9 @@
     <title>Document</title>
 </head>
 <body>
-    <h2>average any number</h2>
+    <h2>average numbers of array</h2>
 
-    <input id="num" placeholder="enter number">
+    <input id="num" placeholder="enter array">
     <button onclick="handleClick()">Click here</button>
     <p id="result"></p>
 
@@ -16,14 +16,15 @@
 let handleClick = () => {
     let ip = (document.getElementById('num').value);
     ipArray = ip.split(',')
-    console.log(ipArray);
+    //console.log(ipArray);
     
     let aa = ipArray.reduce((acc, val)=> {
         return acc + Number(val )/ipArray.length
     },0)
-    console.log(aa);
+    //console.log(aa);
     
     let ans = document.getElementById('result');
+    ans.innerHTML = `The average is ${aa.toFixed(2)}`
 
 }
 </script>
