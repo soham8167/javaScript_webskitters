@@ -685,15 +685,15 @@
 
 
 
-const employee = 
-{   name: "John Doe",   age: 28, 
-      address: 
-    {     street: "123 Main St", 
-            city: "Los Angeles",   
-              country: "USA" 
-              }, 
-      profession: "Engineer"
-     };
+// const employee = 
+// {   name: "John Doe",   age: 28, 
+//       address: 
+//     {     street: "123 Main St", 
+//             city: "Los Angeles",   
+//               country: "USA" 
+//               }, 
+//       profession: "Engineer"
+//      };
 
-let {name,age,address:{street,city,country},profession } = employee
-console.log(city);
+// let {name,age,address:{street,city,country},profession } = employee
+// console.log(city);
