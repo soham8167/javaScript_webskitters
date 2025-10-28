@@ -697,3 +697,26 @@
 
 // let {name,age,address:{street,city,country},profession } = employee
 // console.log(city);
+
+
+
+
+
+// a = [1, 2, 3, 4, 5, 6]
+// Result : [1,3, 6, 10, 15, 21]
+
+// let abc = (arr) => {
+//     let newArr = [];
+//     let sum =0;
+//     for(let i =0; i<arr.length;i++){
+//         sum=sum+arr[i];
+//         newArr.push(sum)
+
+//     }
+   
+//     console.log(newArr);
+    
+
+// }
+// abc([1,2,3,4,5,6])
+
