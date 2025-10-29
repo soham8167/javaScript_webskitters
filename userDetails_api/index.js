@@ -23,7 +23,7 @@ const displayUsers = (users) => {
         <p>${item?.address.address}, ${item?.address.city}, ${item?.address.state},${item?.address.country}, Lat:${item?.address.coordinates.lat}, Lng:${item?.address.coordinates.lng}</p>
         </div>
         <h4>Company Details</h4>
-        <p>${item?.company.address.city} , ${item?.company.country}, ${item?.company.department}, ${item?.company.name}</p>
+        <p>${item?.company.address.city} , ${item?.company.address.country}, ${item?.company.department}, ${item?.company.name}</p>
        
         
         </div>

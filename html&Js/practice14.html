@@ -34,7 +34,9 @@
       result.innerHTML = products.map((item) => {
         let showReview ="";
         showReview = item?.reviews?.map((review)=>{
-            
+            return `
+            <div>Comment: ${review.comment} </div>
+            `
         })
         return `
           <div style= "border:2px solid #ccc; padding:10px; margin:10px; width:200px;">
@@ -45,16 +47,13 @@
             <p> ${item?.description.slice(0,30)+"..."}</p>
             <p>Price: $${item?.price}</p>
            <h3>Review</h3>
-           ${item?.reviews?.map((review)=>{
-            return `
-            <div>Comment: ${review.comment}</div>
-            `
-        })}
+           ${showReview}
+       
           </div>
         `;
       }).join(''); 
     };
-
+getdata()
 
     </script>
 </body>
