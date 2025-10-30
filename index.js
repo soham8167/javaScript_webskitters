@@ -519,3 +519,17 @@
 
 
 
+
+
+// let slargest = (arr) => {
+//     arr.sort((a,b)=>{
+//     return a-b
+//     })
+//    console.log(arr[arr.length-2]);
+   
+    
+// }
+
+// slargest([2,60,30,4,5,10,24])
+
+
