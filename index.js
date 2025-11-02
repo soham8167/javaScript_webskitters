@@ -150,12 +150,6 @@
 
 
 
-
-
-
-
-
-
 // function hello(msg) {
 //   console.log("welcome");
 
@@ -318,7 +312,7 @@
 
 
 
-////  String start
+//  String start
 
 // const message = "hello";
 // console.log(message.includes("hello"));
