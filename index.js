@@ -377,6 +377,8 @@
 // hello("javasdd");
 
 
+
+
 // function hello(msg){
    
 //   let ans=   msg.length>=5 ?  msg.slice(0,5) +'...'  : msg;
@@ -526,4 +528,16 @@
 
 // slargest([2,60,30,4,5,10,24])
 
+
+
+// const words = ["hello", "world", "soham"];
+
+// const camelcase = words.map((ele,index)=>{
+//     if(index==0){
+//         return ele.toLowerCase();
+//     }else{
+//         return ele.charAt(0).toUpperCase() + ele.slice(1).toLowerCase()
+//     }
+// }).join('')
+// console.log(camelcase)
 

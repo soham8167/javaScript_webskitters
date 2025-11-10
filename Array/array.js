@@ -51,6 +51,7 @@
 
 
 
+
 // Write a program to find the index of the first occurrence of a given element in an array.
 
 
@@ -697,6 +698,8 @@
 
 // let {name,age,address:{street,city,country},profession } = employee
 // console.log(city);
+
+
 
 
 
