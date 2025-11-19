@@ -541,3 +541,24 @@
 // }).join('')
 // console.log(camelcase)
 
+
+
+
+
+
+
+//  Write a program to split an array into chunks of size n.
+// let numbers = [1, 2, 3, 4, 5, 6, 7];
+// console.log("Chunks of 2:", chunkArray(numbers, 2));      [[1, 2], [3, 4], [5, 6], [7]]
+
+
+// function chunkArray(arr, n) {
+//     let result =[];
+//     for (let i = 0; i < arr.length; i += n) {
+//         result.push(arr.slice(i, i + n));
+//     }
+//     return result;
+// }
+
+// let numbers = [1, 2, 3, 4, 5, 6, 7];
+// console.log(chunkArray(numbers, 2));
