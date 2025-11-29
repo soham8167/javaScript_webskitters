@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    flex-direction: column;
+}
+h3{
+    
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 30px;
+    
+}
+.container{
+    border: 2px solid rgb(30, 30, 30);
+    width: 35%;
+}
+.inputbox{
+    display: flex;
+    gap: 20px;
+    height: 30px;
+   
+    
+}
+
+button{
+    border: none;
+    cursor: pointer;
+}
+
+ul{
+    list-style: none;
+}
+ul li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid rgb(164, 185, 235);
+}
+.delete-btn {
+    background: red;
+    color: #fff;
+    border: none;
+    padding: 5px 8px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+ul li.completed {
+    text-decoration: line-through;
+    color: #777;
+}

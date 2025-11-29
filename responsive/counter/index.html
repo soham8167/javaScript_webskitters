@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+        }
+
+    </style>
+</head>
+<body>
+   <div class="container">
+    <div class="p1">
+        <h3>Counter App</h3>
+        <p id="result">0</p>
+    </div>
+    <div class="p2">
+        <button id="btn1" onclick="increment()">+</button>
+        <button id="btn2" onclick="decrement()">-</button>
+        <button id="btn3" onclick="reset()">Reset</button>
+    </div>
+   </div>
+
+   <script>
+const ans = document.getElementById('result')
+const b1 = document.getElementById('btn1')
+const b2 = document.getElementById('btn2')
+const b3 = document.getElementById('btn3')
+let count=0
+function increment(){
+    count++;
+    ans.textContent=count
+}
+function decrement(){
+    count--;
+    ans.textContent=count
+}
+function reset(){
+    count=0;
+    ans.textContent=count
+}
+
+   </script>
+</body>
+</html>
