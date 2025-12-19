@@ -2,8 +2,9 @@ const getUserData = async () => {
     try{
         let response = await fetch('https://dummyjson.com/users')
         let data = await response.json();
-        console.log(data.users[0]);
-        displayUsers(data?.users)
+        console.log(data.users);
+        
+        displayUsers(data ? data.users : "")
         
     }catch(e){
         console.log("error", e);
